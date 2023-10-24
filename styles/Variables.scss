@@ -1,0 +1,67 @@
+//Colors
+$clr-black: rgb(13, 13, 13);
+$clr-white: rgb(242, 239, 235);
+$clr-greyish: #404259;
+$clr-purple: #515373;
+$clr-blue: #141640;
+
+//Font-family:
+$ff-roboto-flex: "", sans-sefif;
+$ff-atkinson: "", sans-serif;
+
+//Font-size
+$fs-primary: 14px;
+$fs-secondary: 16px;
+$fs-h1: 3rem;
+$fs-h2: 2.25rem;
+$fs-h3: 1.5rem;
+$fs-h4: 1.25rem;
+$fs-h5: 1rem;
+$fs-par-general: 1rem;
+
+//WindowSizes
+$max-vh: 1080px;
+$max-vw: 1920px;
+
+//Shadow
+$smallShadow:
+0px 1px 2.6px -8px rgba(0, 0, 0, 0.08),
+0px 1px 15px -8px rgba(0, 0, 0, 0.26);
+
+$mediumShadow:
+  0px 0px 3px rgba(0, 0, 0, 0.342)
+;
+$largeShadow:
+0px 0px 1.3px rgba(0, 0, 0, 0.343),
+0px 0px 8px rgba(0, 0, 0, 0.45)
+;
+
+//Padding
+$p-general: 1rem;
+$p-big: 5rem;
+
+//Time
+$tr-fast: 250ms;
+$tr-medium: 500ms;
+$tr-fast: 250ms;
+
+//Mixins
+@mixin button{
+    text-transform: capitalize;
+    background-color: $white;
+    border: 0;
+    box-shadow: $mediumShadow;
+    border-radius: .1rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+//Font-face
+@font-face {
+  font-family: 'Roboto Flex';
+  src: 
+       url('/fonts/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf') format('truetype');
+  font-weight: 100 1000;
+  // font-style: normal;
+
+}

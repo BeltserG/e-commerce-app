@@ -1,0 +1,14 @@
+@use "./Normalize.scss";
+@use "./FontSizes.scss";
+@use "./Variables.scss" as v;
+// @use "./ScrollBar.scss";
+
+html {
+  background-color: v.$clr-black;
+  font-family: v.$ff-roboto-flex;
+  // scroll-behavior: smooth;
+}
+body {
+  margin: 0 auto;
+}
+
