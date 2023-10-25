@@ -4,18 +4,18 @@ import Link from "next/link";
 import Image from "next/image";
 
 import classNames from "classnames";
-import cl from "./styles/Footer.module.scss";
+import cl from "./styles/Hero.module.scss";
 
 type Props = {
 children?: ReactNode
 
 }
-const Footer = ({children}: Props) => {
+const Hero = ({children}: Props) => {
   return (
     <>
-       <footer className={classNames(cl["footer-container"])}>Footer</footer>
+       <div className={classNames(cl["hero-container"])}></div>
     </>
   );
 };
 
-export default Footer;
+export default Hero;

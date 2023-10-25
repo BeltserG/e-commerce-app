@@ -1,0 +1,19 @@
+@use "@/styles/Variables.scss" as v;
+
+
+.login-button{
+    border: 2px solid transparent;
+    background-color: v.$clr-white;
+    padding: .3rem 1.2rem;
+    border-radius: .3rem;
+    font-size: 1.25rem;
+    border-radius: 100vh;
+}
+.login-button:hover,
+.login-button:focus{
+    opacity: .85;
+    cursor: pointer;
+}
+.login-button:focus:active{
+    border: 2px solid black;
+}

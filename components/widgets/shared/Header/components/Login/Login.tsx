@@ -4,18 +4,18 @@ import Link from "next/link";
 import Image from "next/image";
 
 import classNames from "classnames";
-import cl from "./styles/Footer.module.scss";
+import cl from "./styles/Login.module.scss";
 
 type Props = {
 children?: ReactNode
 
 }
-const Footer = ({children}: Props) => {
+const Login = ({children}: Props) => {
   return (
-    <>
-       <footer className={classNames(cl["footer-container"])}>Footer</footer>
-    </>
+    <Link href={"/login"}>
+       <button className={classNames(cl["login-button"])}>Login/Sign Up</button>
+    </Link>
   );
 };
 
-export default Footer;
+export default Login;
