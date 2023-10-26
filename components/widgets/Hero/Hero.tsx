@@ -6,14 +6,21 @@ import Image from "next/image";
 import classNames from "classnames";
 import cl from "./styles/Hero.module.scss";
 
-type Props = {
-children?: ReactNode
+import Arrows from "./components/Arrows/Arrows";
+import Feed from "./components/Feed/Feed";
+import Dots from "./components/Dots/Dots";
 
-}
-const Hero = ({children}: Props) => {
+type Props = {
+  children?: ReactNode;
+};
+const Hero = ({ children }: Props) => {
   return (
     <>
-       <div className={classNames(cl["hero-container"])}></div>
+      <div className={classNames(cl["hero-container"])}>
+        <Feed />
+        <Arrows />
+        <Dots/>
+      </div>
     </>
   );
 };
