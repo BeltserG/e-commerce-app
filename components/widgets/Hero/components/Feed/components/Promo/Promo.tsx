@@ -7,15 +7,21 @@ import classNames from "classnames";
 import cl from "./styles/Promo.module.scss";
 
 type Props = {
-children?: ReactNode
-
-}
-const Promo = ({children}: Props) => {
+  children?: ReactNode,
+  worksCount: number,
+  current: number
+};
+const Promo = ({ children, worksCount = 0, current = 1 }: Props) => {
   return (
     <>
-       <div className={classNames(cl["promo-container"])}>
+      <div
+        className={classNames(cl["promo-container"])}
+        style={{
+          transform: `translateX(${100 * (worksCount - (current - 1))}%`,
+        }}
+      >
         <img src="" alt="" />
-       </div>
+      </div>
     </>
   );
 };

@@ -18,7 +18,6 @@ children?: ReactNode
 const Cart = ({children}: Props) => {
   const items = useSelector((state: RootState) => state.cart.items);
   const jsxItems = items.map((item)=> <CartItem />);
-  console.log(items);
   return (
     <div className={classNames(cl["cart-container"])}>
       <img className={classNames(cl["cart__icon"])} src="/icons/shopping_cart.svg" alt="cart" />
